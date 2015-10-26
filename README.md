@@ -16,3 +16,9 @@ Running `flycheck-buffer` in `frsub/lib.rs` results in:
 ```
     2   1 error           can't find crate for `env_logger`... (rust)
 ```
+
+and in `src/main.rs`:
+
+```
+    3   1 error           can't find crate for `frsub`... (rust)
+```
