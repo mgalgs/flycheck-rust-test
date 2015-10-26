@@ -9,6 +9,8 @@ Currently, running `flycheck-buffer` in `frsub/lib.rs` results in:
     1  14 error           can't find crate for `log`... (rust)
 ```
 
+(even after running `cargo build` from the `frsub` directory)
+
 Running it in `src/main.rs` results in roughly the same thing:
 
 ```
