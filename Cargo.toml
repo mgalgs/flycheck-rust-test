@@ -1,0 +1,12 @@
+[package]
+name = "frtest"
+version = "0.1.0"
+authors = ["Mitchel Humpherys <mitch.special@gmail.com>"]
+
+[dependencies]
+frsub = { path = "frsub" }
+log = "*"
+
+[[bin]]
+name = "frtest"
+path = "src/main.rs"

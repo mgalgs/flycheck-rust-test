@@ -1,0 +1,12 @@
+[package]
+name = "frsub"
+version = "0.1.0"
+authors = ["Mitchel Humpherys <mitch.special@gmail.com"]
+description = "Local lib for flycheck-rust testing"
+
+[lib]
+name = "frsub"
+path = "lib.rs"
+
+[dependencies]
+log = "*"
