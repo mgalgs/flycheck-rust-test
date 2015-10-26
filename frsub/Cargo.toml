@@ -10,3 +10,4 @@ path = "lib.rs"
 
 [dependencies]
 log = "*"
+env_logger = "*"
