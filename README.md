@@ -2,18 +2,17 @@ Test repo to iron out some issues with
 [flycheck-rust](https://github.com/flycheck/flycheck-rust).
 
 
-Currently, running `flycheck-buffer` in `frsub/lib.rs` results in:
+# Repro
+
+    git clone https://github.com/mgalgs/flycheck-rust-test.git
+    cd flycheck-rust-test.git
+    cargo run
+    cd frsub
+    cargo build
+    emacs lib.rs
+
+Running `flycheck-buffer` in `frsub/lib.rs` results in:
 
 ```
-    1  14 error           multiple matching crates for `log`... (rust)
-    1  14 error           can't find crate for `log`... (rust)
-```
-
-(even after running `cargo build` from the `frsub` directory)
-
-Running it in `src/main.rs` results in roughly the same thing:
-
-```
-    3  14 error           multiple matching crates for `log`... (rust)
-    3  14 error           can't find crate for `log`... (rust)
+    2   1 error           can't find crate for `env_logger`... (rust)
 ```
